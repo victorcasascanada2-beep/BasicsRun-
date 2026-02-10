@@ -67,8 +67,8 @@ def realizar_peritaje(client, marca, modelo, anio, horas, observaciones, lista_f
             model="gemini-2.5-pro", 
             contents=[prompt_final] + fotos_ia,
             config={
-                "temperature": 0.35,
-                "max_output_tokens": 4096
+                "temperature": 0.1,
+                "max_output_tokens": 8192
             }
         )
         return response.text
